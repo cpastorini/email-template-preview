@@ -1,0 +1,12 @@
+[project]
+name = "email-template-preview"
+version = "0.1.0"
+description = "Preview live di template email HTML/XSL da CSV"
+requires-python = ">=3.11"
+dependencies = [
+  "streamlit>=1.37",
+  "pandas>=2.2",
+]
+
+[dependency-groups]
+dev = []

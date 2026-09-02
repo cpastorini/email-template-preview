@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.1">
+  <xsl:output method="html" version="4.0" omit-xml-declaration="yes" indent="yes" />
+  <xsl:template match="messageBody">
+    <xsl:comment>NOSPAM-POKERSTARS</xsl:comment>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Layout 2017</title>
+        <style type="text/css">
+          * { 
+            margin:0; padding:0;
+          }
+
+          @media only screen and (max-width: 600px) {
+            *[class]img.full {
+              min-width:340px;
+            }
+            *[class].full {
+              width: 100% !important;
+              height:auto !important;
+            }
+            *[class].quarter {
+              width: auto !important;
+              height:20px !important;
+            }
+            *[class].change-width {
+              width: 50% !important;
+            }
+            *[class].space .full {
+              margin-top:5px;
+              margin-bottom:5px;
+            }
+            .nowrap {
+               white-space: nowrap;
+            }
+            
+
+            
+          }
+/*
+          *[class].link_def{
+            color: #222222 !important;
+            font-weight: bold !important;
+            Text-decoration: underline !important;
+            }
+            
+            *[class].li_def{
+            color: #222222;
+            margin-left: 15px;
+            }
+        */    
+        </style>
+      </head>
+      <body style="margin:0; padding:0;" bgcolor="#ffffff">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <table bgcolor="#ffffff" class="full" align="center" border="0" cellpadding="0"
+                cellspacing="0" width="650" style="min-width:340px;">
+                ${TEMPLATE_CONTENT}
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>

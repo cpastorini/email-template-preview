@@ -1,0 +1,2248 @@
+COMM_SRV_ID;SUBJECT;FROM_ADDRESS;XSL_TEMPLATE
+22;Your account was suspended;info@mail.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<xsl:choose>
+<xsl:when test=""causa=2"">
+<xsl:choose>
+<xsl:when test=""flag_light=1"">
+Cher/Chère <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+Votre compte de jeu a été suspendu.
+<br/>
+<br/>
+<xsl:choose>
+<!-- Sia documento che residenza mancanti -->
+<xsl:when test=""case_light=1"">
+Pour le réactiver, vous devrez nous envoyer une copie lisible (photocopie, scan ou photo numérique) de votre
+pièce d'identité (recto-verso de la carte d'identité, du passeport ou du permis de conduire)
+<b>en veillant à indiquer les coordonnées complètes de votre adresse de résidence</b>
+, via :
+<br/>
+<br/>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">E-mail : <a style=""color: #222222;font-weight:
+bold;Text-decoration: underline;"" href=""mailto:inviodoc@pokerstars.it"">inviodoc@pokerstars.it</a></li>
+<li style=""color: #222222;margin-left: 15px;"">Fax : 02.30185200</li>
+</ul>
+</xsl:when>
+<!-- Solo documento mancante -->
+<xsl:when test=""case_light=2"">
+Pour le réactiver, vous devrez nous transmettre une copie lisible de votre pièce
+d'identité (recto-verso de la carte d'identité, du passeport ou du permis de conduire) via :
+<br/>
+<br/>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">E-mail : <a style=""color: #222222;font-weight:
+bold;Text-decoration: underline;"" href=""mailto:inviodoc@pokerstars.it"">inviodoc@pokerstars.it</a></li>
+<li style=""color: #222222;margin-left: 15px;"">Fax : 02.30185200</li>
+</ul>
+</xsl:when>
+<!-- Solo residenza mancante -->
+<xsl:when test=""case_light=3"">
+Pour le réactiver, il vous suffira de nous communiquer votre adresse de résidence complète
+via :
+<br/>
+<br/>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">E-mail : <a style=""color: #222222;font-weight:
+bold;Text-decoration: underline;"" href=""mailto:inviodoc@pokerstars.it"">inviodoc@pokerstars.it</a></li>
+<li style=""color: #222222;margin-left: 15px;"">Fax : 02.30185200</li>
+</ul>
+</xsl:when>
+</xsl:choose>
+Nous vous rappelons que si le compte de jeu n'est pas régularisé dans les 60 jours, il ne
+pourra plus être réactivé (comme prévu par l'art. 10 du contrat de jeu) et il sera
+nécessaire d'en demander la clôture en remplissant le formulaire téléchargeable en cliquant
+<a style=""color: #222222;font-weight: bold;Text-decoration: underline;""
+href=""https://www.pokerstars.it/documents/10903/46124/modulo_chiusura.pdf/0c841f72-2218-43d3-
+8f58-7c4a810bc8e1"">ici</a>
+.
+<br/>
+<br/>
+</xsl:when>
+<xsl:otherwise>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>nous avons <b>suspendu votre compte</b> car nous n'avons pas reçu de copie de
+votre pièce d'identité.</p>
+<p>Pour le réactiver, téléchargez une copie lisible recto-verso de votre carte d'identité,
+passeport ou permis de conduire.</p>
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Télécharger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table><br/>
+<p>Si le compte n'est pas régularisé <b>dans les 60 jours</b>, comme prévu
+par l'article 10 du contrat de jeu, vous devrez obligatoirement en demander la clôture. Pour
+toute information et assistance, contactez notre service client.</p>
+<p>Nous vous rappelons que la copie du document est indispensable pour retirer vos
+gains.</p>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:when test=""causa=11"">
+<br/>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+Nous vous informons que la pièce d'identité enregistrée sur votre profil a expiré depuis
+<xsl:value-of select=""gg_scad""/> jours,
+<br/>
+par conséquent votre compte de jeu a été suspendu.
+<br/>
+<br/>
+Pour le réactiver, vous devrez nous envoyer une copie lisible (photocopie, scan ou photo numérique) de votre
+pièce d'identité (recto-verso de la carte d'identité, du passeport ou du permis de conduire)
+via :
+<br/>
+<br/>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">E-mail : <a style=""color: #222222;font-weight: bold;Text-
+decoration: underline;"" href=""mailto:inviodoc@pokerstars.it"">inviodoc@pokerstars.it</a></li>
+<li style=""color: #222222;margin-left: 15px;"">Fax : 02.30185200</li>
+</ul>
+Pour plus d'informations, contactez notre service client.
+<br/><br/>
+</xsl:when>
+<xsl:otherwise>
+<br/>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>nous vous informons que nous effectuons actuellement des vérifications sur votre compte : <b>il restera
+suspendu jusqu'à la fin des contrôles</b> et nous vous informerons par e-mail lors de sa réouverture.</p>
+<br/>
+</xsl:otherwise>
+</xsl:choose>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+48;[FRA - 48] Il tuo account PokerStars e' bloccato;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br />
+<p>nous vous informons que <b>votre compte a été bloqué</b> car des
+<b>données d'accès incorrectes</b> ont été saisies plus de quatre fois.</p>
+<p>Continuez sur notre site pour débloquer votre compte et récupérer votre mot de passe.</p>
+</td>
+</tr>
+<br/>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Sblocca_Account.png"" width=""180"" height=""40"" alt=""Débloquer"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+23;[FRA - 23] Il tuo account e' stato riattivato;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<p>nous vous informons que nous avons terminé les vérifications de votre compte. Vous pouvez désormais recommencer à l'utiliser.</p>
+<p>Amusez-vous bien !</p>
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+114;[FRA - 114] Richiesta di prelievo annullata;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+nous vous informons que la <b>demande de retrait de &#8364;</b>
+<xsl:value-of select=""importo_prelievo"" />
+que vous avez soumise le <xsl:value-of select=""data_prenotazione"" /> à
+<xsl:value-of select=""ora_prenotazione"" />
+<b>a été annulée</b>.
+<br /><br />
+Un <b>gain erroné de &#8364;
+<xsl:value-of select=""importo_vincita_errata"" /></b>
+concernant le ticket
+<xsl:value-of select=""tsn"" />
+a été précédemment crédité sur votre compte en raison d'un <b>rapport incorrect</b> (le gain dû pour ce ticket aurait été de
+&#8364;
+<xsl:value-of select=""importo_vincita_spettante"" />
+).
+<br/><br/>
+Nous avons donc <b>déduit de votre solde le montant de
+&#8364;
+<xsl:value-of select=""importo_storno_recuperato"" /></b>
+pour compenser le gain erroné.
+<br />
+<br />
+Nous nous excusons pour ce désagrément.
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+ ${FOOTER} "
+35;[FRA - 35] Attiva la tua ricarica;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+<br/>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>le <xsl:value-of select=""data_operazione""/>
+vous avez effectué une <b>recharge dans un point de vente.</b></p>
+<p>Pour créditer le montant sur votre compte, accédez à la section de votre Espace réservé et,
+après avoir sélectionné le mode ""Point de vente"", saisissez le code PIN de recharge.</p>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+110;[FRA - 110] Il documento che hai inviato non e' valido;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+malheureusement, il n'a pas été possible de valider le document que vous nous avez fourni car
+<b>
+<xsl:choose>
+<!-- Motivo protocollo provvisorio SGAD: Documento mancante -->
+<xsl:when test=""causa=1"">
+il n'est pas complet.
+</xsl:when>
+<!-- Motivo protocollo provvisorio SGAD: Dati illeggibili -->
+<xsl:when test=""causa=2"">
+il n'est pas lisible dans toutes ses parties.
+</xsl:when>
+<!-- Motivo protocollo provvisorio SGAD: Documento non valido -->
+<xsl:when test=""causa=3"">
+il n'est pas conforme à ceux que nous acceptons.
+</xsl:when>
+</xsl:choose>
+</b>
+<br /><br />
+Nous vous invitons à <b>nous renvoyer</b> une copie recto-verso d'une pièce d'identité en cours de validité (carte d'identité, permis de conduire ou passeport),
+<b>intacte et avec toutes les données bien lisibles.</b><br /><br />
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Charger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table><br/><br/>
+<br />
+Nous vous rappelons que l'envoi de la copie du document est indispensable pour retirer vos gains.
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+61;[FRA - 61] Abbiamo accreditato il tuo bonus;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<xsl:if test=""tipo_bonus=1 or tipo_bonus=3"">
+<p>félicitations ! Nous avons crédité le
+<b>
+bonus
+<xsl:value-of select=""des_prodotto""/>
+de
+<xsl:value-of select=""importo_bonus""/>&#8364;,
+</b>
+sur votre compte.</p>
+<xsl:if test=""nota_operatore != ''"">
+<xsl:value-of select=""nota_operatore""/>
+</xsl:if>
+<br/>
+<br/>
+Le bonus expirera le <xsl:value-of select=""scadenza_bonus""/> et pourra être utilisé via
+<xsl:value-of select=""tipo_canale_bonus""/>.
+<br/>
+<br/>
+</xsl:if>
+<xsl:if test=""tipo_bonus=2"">
+<p>félicitations ! Nous avons crédité le <b>bonus progressif Poker de
+<xsl:value-of select=""importo_bonus""/>&#8364;</b> sur votre compte.</p>
+<br/>
+</xsl:if>
+<br/>
+Amusez-vous bien !
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+66;[FRA - 66] Importo del prelievo riaccreditato;info@clients.pokerstars.fr;"
+${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+<xsl:choose>
+<xsl:when test=""tipo_prelievo=7"">
+<!-- Visa o Mastercard -->
+<xsl:if test=""(mod_pagam=1) or (mod_pagam=2)"">
+nous vous informons que nous avons <b>recrédité</b> sur votre compte
+le montant du <b>retrait par carte de crédit/prépayée de
+&#8364; <xsl:value-of select=""importo"" /></b>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo"" />.
+<br />
+<br />
+</xsl:if>
+<!-- PayPal -->
+<xsl:if test=""mod_pagam=3"">
+nous vous informons que nous avons <b>recrédité</b> sur votre compte
+le montant du <b>retrait via PayPal de
+&#8364; <xsl:value-of select=""importo"" /></b>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo"" />.
+<br />
+<br />
+</xsl:if>
+</xsl:when>
+<xsl:when test=""tipo_prelievo=6"">
+nous vous informons que votre demande de <b>retrait de &#8364;
+<xsl:value-of select=""importo"" />
+n'a pas abouti</b>, le montant a donc été
+recrédité sur votre compte.
+<br/>
+<br/>
+Pour plus de détails, veuillez contacter Skrill afin qu'ils effectuent les vérifications nécessaires.
+<br />
+<br />
+</xsl:when>
+<xsl:when test=""tipo_prelievo=8"">
+le montant du <b>retrait de &#8364;
+<xsl:value-of select=""importo"" /></b>
+avec retrait en point de vente que vous avez demandé le
+<xsl:value-of select=""data_prelievo"" />
+<b>a été recrédité sur votre compte</b>.
+<br />
+<br />
+</xsl:when>
+<xsl:when test=""tipo_prelievo=9"">
+<!-- Visa o Mastercard -->
+<xsl:if test=""(mod_pagam=1) or (mod_pagam=2)"">
+nous vous informons que nous avons <b>recrédité</b> sur votre compte
+le montant du <b>retrait par carte de crédit/prépayée de
+&#8364; <xsl:value-of select=""importo"" /></b>
+que vous avez demandé le <xsl:value-of select=""data_prelievo"" />.
+<br />
+<br />
+</xsl:if>
+</xsl:when>
+<xsl:otherwise>
+le montant du <b>retrait de &#8364;
+<xsl:value-of select=""importo"" /></b>
+avec retrait en point de vente que vous avez demandé le
+<xsl:value-of select=""data_prelievo"" />
+<b> a été recrédité sur votre compte</b>, en raison du non-retrait
+dans le délai maximum de 7 jours à compter de la
+date d'autorisation d'encaissement.
+<br />
+<br />
+</xsl:otherwise>
+</xsl:choose>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+<!-- Referrer site PokerStars - fine -->
+${FOOTER} "
+67;[FRA - 67] Importo del prelievo riaccreditato;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+<xsl:if test=""tipo_prelievo=7"">
+<!-- Visa o Mastercard -->
+<xsl:if test=""(mod_pagam=1) or (mod_pagam=2)"">
+nous vous informons que nous avons <b>recrédité</b> sur votre compte
+le montant du <b>retrait par carte de crédit/prépayée de <xsl:value-of select=""importo""/> €
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>.
+<br/>
+<br/>
+L'annulation peut être due au refus de la transaction par votre établissement de crédit ou
+à des problèmes de communication avec ce dernier.</b>
+<br/>
+<br/>
+</xsl:if>
+<!-- PayPal -->
+<xsl:if test=""mod_pagam=3"">
+nous vous informons que nous avons <b>recrédité</b> sur votre compte
+le montant du <b>retrait via PayPal de <xsl:value-of select=""importo""/> €
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>, net des frais liés à l'opération.
+<br/>
+<br/>
+L'annulation peut être due au refus de la transaction par PayPal ou à des
+problèmes de communication avec ce dernier.</b>
+<br/>
+<br/>
+</xsl:if>
+</xsl:if>
+Votre nouveau solde est de <b><xsl:value-of select=""saldo""/> €.</b>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+3;[FRA - 3] Recupera la tua password;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour
+<xsl:value-of select=""nome"" />,
+<br />
+<br />
+nous avons reçu une <b>demande de récupération du mot de passe</b> de votre compte. Continuez sur notre
+site pour terminer la procédure.
+<br />
+</td>
+</tr>
+<br />
+<br />
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Recupera_Password.png"" width=""180"" height=""40"" alt=""Récupérer le mot de passe"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<br/>
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+<br />
+${FOOTER} "
+57;[FRA - 57] Richiesta di prelievo inoltrata;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+<xsl:if test=""tipo_prelievo!=8"">
+votre demande de <b>retrait de &#x20AC;
+<xsl:value-of select=""importo""/></b>
+a &#xe9;t&#xe9; <b>transmise avec succ&#xe8;s.</b> Pour plus de d&#xe9;tails, visitez la section <i>Demandes de
+retrait</i>
+dans votre Espace r&#xe9;serv&#xe9;.
+<br/>
+<br/>
+Votre nouveau solde est de <b>&#x20AC;
+<xsl:value-of select=""nuovo_saldo""/></b>
+.
+<br/>
+<br/>
+</xsl:if>
+<!-- Bonifico Bancario -->
+<xsl:if test=""tipo_prelievo=1"">
+Nous vous rappelons que le montant sera cr&#xe9;dit&#xe9; sur votre compte bancaire dans le
+jour ouvrable suivant la demande.
+<br/>
+<br/>
+</xsl:if>
+<!-- Vaglia postale -->
+<xsl:if test=""tipo_prelievo=2"">
+Nous vous rappelons que le montant pourra &#xea;tre encaiss&#xe9; &#xe0; partir du 5&#xb0; jour ouvrable
+suivant la r&#xe9;ception de cette communication en vous pr&#xe9;sentant avec votre code fiscal dans
+n'importe quel bureau de poste italien.
+<br/>
+</xsl:if>
+<!-- Domiciliazione Postale -->
+<xsl:if test=""tipo_prelievo=3"">
+Nous vous rappelons que le montant pourra &#xea;tre encaiss&#xe9; &#xe0; partir du 5&#xb0; jour ouvrable
+suivant la r&#xe9;ception de cette communication, en vous pr&#xe9;sentant avec votre code fiscal dans
+n'importe quel bureau de poste italien.
+<br/>
+<br/>
+</xsl:if>
+<!-- Postepay -->
+<xsl:if test=""tipo_prelievo=5"">
+Nous vous rappelons que le montant sera cr&#xe9;dit&#xe9; sur votre carte PostePay dans un d&#xe9;lai d'environ 2 jours
+ouvrables &#xe0; compter de la r&#xe9;ception de cette communication.
+<br/>
+<br/>
+</xsl:if>
+<!-- Moneybookers-->
+<xsl:if test=""tipo_prelievo=6"">Nous vous rappelons que le montant sera cr&#xe9;dit&#xe9; sur votre compte
+Skrill dans les prochaines 24 heures.</xsl:if>
+<!-- Cqr -->
+<xsl:if test=""tipo_prelievo=7"">
+<!-- Visa o Mastercard -->
+<xsl:if test=""(mod_pagam=1) or (mod_pagam=2)"">Nous vous rappelons que le montant sera
+cr&#xe9;dit&#xe9; sur votre carte dans les 5 jours ouvrables suivant la r&#xe9;ception de cette communication.</xsl:if>
+<!-- Paypal -->
+<xsl:if test=""(mod_pagam=3)"">Nous vous rappelons que le montant sera cr&#xe9;dit&#xe9; sur votre compte
+PayPal dans les prochaines 48 heures.</xsl:if>
+<!-- Neteller -->
+<xsl:if test=""(mod_pagam=5)"">Nous vous rappelons que le montant sera cr&#xe9;dit&#xe9; sur votre compte
+Neteller dans les prochaines 24 heures.</xsl:if>
+</xsl:if>
+<!-- PDV -->
+<xsl:if test=""tipo_prelievo=8"">
+nous vous informons que votre demande de retrait avec encaissement en Point de Vente pour un montant de
+&#x20AC;
+<xsl:value-of select=""importo""/>
+a &#xe9;t&#xe9; transmise avec succ&#xe8;s.
+<br/>
+<br/>
+Vous recevrez dans les 24 heures un e-mail de confirmation de notre part avec les instructions n&#xe9;cessaires &#xe0; l'encaissement.
+<br/>
+<br/>
+</xsl:if>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Note : si vous n'&#xea;tes pas &#xe0; l'origine de cette demande, veuillez contacter notre service client.<br/>
+<br/>
+<i>L'&#xe9;quipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+120;[FRA - 120] Verifica della tua identità;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td colspan=""3"" style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/><br/>
+sur la base des vérifications effectuées par nos systèmes, conformément à la réglementation anti-blanchiment, <b>votre nom figure sur la liste des ""personnes politiquement exposées / personnes d'intérêt local""</b> selon la définition suivante :
+<br/>
+""personnes physiques qui occupent ou ont cessé d'occuper depuis moins d'un an des fonctions publiques importantes, ainsi que les membres de leur famille et les personnes connues pour entretenir des liens étroits avec les personnes susmentionnées"" (la liste des fonctions incluses dans cette définition figure ci-dessous).
+<br/><br/>
+Nous vous prions donc de <b>remplir intégralement le formulaire ci-joint et de le renvoyer en répondant à cet e-mail dans un délai de <xsl:value-of select=""giorni_seconda_mail""/> jours</b> à compter de la réception de la présente communication, comme prévu par la procédure de vigilance renforcée conformément à l'article 25, paragraphe 4, du décret législatif 231/01 et ses modifications ultérieures.
+<br/><br/>
+Veuillez noter que si la présence de votre nom dans ces listes est due à un cas d'homonymie, et que par conséquent vous ne correspondez pas aux définitions données ci-dessous, il vous suffira de cocher la case correspondante dans le document ci-joint.
+<br/><br/>
+Définition des personnes politiquement exposées / personnes d'intérêt local :
+<dl>
+<dt><b>1)</b> sont des personnes physiques qui occupent ou ont occupé des fonctions publiques importantes, celles qui occupent ou ont occupé le poste de :</dt>
+<dd><b>1.1</b> Président de la République, Président du Conseil, Ministre, Vice-Ministre et Sous-Secrétaire, Président de Région, Conseiller Régional, Maire d'un chef-lieu de province ou d'une ville métropolitaine, Maire d'une commune d'au moins 15 000 habitants ainsi que des fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.2</b> député, sénateur, parlementaire européen, conseiller régional ainsi que des fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.3</b> membre des organes de direction centraux des partis politiques ;</dd>
+<dd><b>1.4</b> juge de la Cour Constitutionnelle, magistrat de la Cour de Cassation ou de la Cour des Comptes, conseiller d'État et autres membres du Conseil de Justice Administrative pour la Région sicilienne ainsi que des fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.5</b> membre des organes de direction des banques centrales et des autorités indépendantes ;</dd>
+<dd><b>1.6</b> ambassadeur, chargé d'affaires ou fonctions équivalentes dans des États étrangers, officier de rang supérieur des forces armées ou fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.7</b> membre des organes d'administration, de direction ou de contrôle des entreprises contrôlées, même indirectement, par l'État italien ou par un État étranger, ou détenues majoritairement ou totalement par les Régions, par les communes chefs-lieux de province et les villes métropolitaines et par les communes d'une population totale d'au moins 15 000 habitants ;</dd>
+<dd><b>1.8</b> directeur général d'une ASL ou d'un établissement hospitalier, d'un hôpital universitaire ou d'autres organismes du service national de santé ;</dd>
+<dd><b>1.9</b> directeur, directeur adjoint ou membre de l'organe de gestion ou personne exerçant des fonctions équivalentes dans des organisations internationales ;</dd>
+<dt><b>2)</b> sont des membres de la famille de personnes politiquement exposées : les parents, le conjoint ou la personne liée par une union civile ou un concubinage de fait ou des institutions similaires, les enfants et leurs conjoints ainsi que les personnes liées aux enfants par une union civile ou un concubinage de fait ou des institutions similaires ;</dt>
+<dt><b>3)</b> sont des personnes avec lesquelles les personnes politiquement exposées sont connues pour entretenir des liens étroits :</dt>
+<dd><b>3.1</b> les personnes physiques qui, au sens du présent décret, détiennent, conjointement avec la personne politiquement exposée, la propriété effective d'entités juridiques, de trusts et d'institutions juridiques similaires ou qui entretiennent des relations d'affaires étroites avec la personne politiquement exposée ;</dd>
+<dd><b>3.2</b> les personnes physiques qui ne détiennent que formellement le contrôle total d'une entité notoirement constituée, en fait, dans l'intérêt et au profit d'une personne politiquement exposée ;</dd>
+</dl>
+<br/>
+Pour toute assistance, contactez notre service client.
+<br/><br/>
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+32;[FRA - 32] PIN del tuo account;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+votre code PIN est <b><xsl:value-of select=""pin"" />,</b> vous pouvez l'utiliser pour contacter
+notre service client par téléphone.
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+58;[FRA - 58] Importo del prelievo riaccreditato;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour
+<xsl:value-of select=""nome""/>
+,
+<br/>
+<br/>
+<xsl:choose>
+<!-- Ordine Stornato : Qualsiasi tipo di prelievo -->
+<xsl:when test=""tipo_annullo='0' and tipo_prelievo!='8'"">
+le montant du <b>retrait de <xsl:value-of select=""importo""/> €</b> via
+<xsl:value-of select=""tipo_prelievo_desc""/>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>
+<b>a été recrédité sur votre compte.</b>
+<br/>
+<br/>
+Votre solde est de <b><xsl:value-of select=""saldo""/> €.</b>
+<br/>
+<br/>
+Avant de procéder à une nouvelle demande, <b>veuillez vérifier l'exactitude des données
+saisies</b> : nous vous rappelons que toutes les demandes doivent être effectuées au nom du titulaire
+du compte.
+<br/>
+<br/>
+Si les données saisies s'avèrent incorrectes, 24 heures après la
+réception de cette communication, vous pourrez les modifier et procéder à une nouvelle
+demande de retrait.
+<br/>
+<br/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:choose>
+<!-- Ordine Respinto : Bonifico Bancario -->
+<xsl:when test=""tipo_prelievo=1"">
+notre banque a <b>annulé le virement bancaire de
+<xsl:value-of select=""importo""/> €</b>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>.
+Aujourd'hui, nous avons recrédité le montant sur votre compte.
+<br/>
+<br/>
+Votre nouveau solde est de <b><xsl:value-of select=""saldo""/> €.</b>
+<br/>
+<br/>
+Nous vous invitons à <b>vérifier l'exactitude du code IBAN</b> et nous vous rappelons que celui-ci doit
+être <b>à votre nom.</b>
+Si les données saisies s'avèrent incorrectes, 24 heures après la réception de cette
+communication, vous pourrez les modifier et effectuer une nouvelle demande de retrait.
+<br/>
+<br/>
+</xsl:when>
+<!-- Ordine Respinto : Domiciliazione Postale -->
+<xsl:when test=""tipo_prelievo=3"">
+nous vous informons qu'en raison de l'expiration des délais de paiement, nous avons
+<b>recrédité</b> sur votre compte
+le montant du <b>virement postal domicilié de
+<xsl:value-of select=""importo""/> €</b>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>
+<br/>
+<br/>
+Votre nouveau solde est de <xsl:value-of select=""saldo""/> €.
+<br/>
+<br/>
+</xsl:when>
+<!-- Ordine Stornato PdV-->
+<xsl:when test=""tipo_prelievo=8"">
+le montant du <b>retrait de <xsl:value-of select=""importo""/></b>
+avec encaissement en point de vente que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>
+<b>a été recrédité sur votre compte.</b>
+<br/>
+<br/>
+Votre nouveau solde est de <b><xsl:value-of select=""saldo""/> €.</b>
+<br/>
+<br/>
+</xsl:when>
+<!-- Ordine Respinto : Altro Tipo Prelievo -->
+<xsl:otherwise>
+le montant du <b>retrait de <xsl:value-of select=""importo""/> €</b> via
+<xsl:value-of select=""tipo_prelievo_desc""/>
+que vous avez demandé le
+<xsl:value-of select=""data_prelievo""/>
+<b>a été recrédité sur votre compte.</b>
+<br/>
+<br/>
+Votre nouveau solde est de <b><xsl:value-of select=""saldo""/> €.</b>
+<br/>
+<br/>
+Avant de procéder à une nouvelle demande, veuillez vérifier l'exactitude des données
+saisies : nous vous rappelons que toutes les demandes doivent être effectuées au nom du titulaire
+du compte.
+<br/>
+<br/>
+Si les données saisies s'avèrent incorrectes, 24 heures après la
+réception de cette communication, vous pourrez les modifier et procéder à une nouvelle
+demande de retrait.
+<br/>
+<br/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:otherwise>
+</xsl:choose>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<br/>
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+121;[FRA - 121] Sollecito per verifica della tua identita';info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td colspan=""3"" style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/><br/>
+comme déjà notifié dans l'e-mail du <xsl:value-of select=""data_provvedimento""/>, sur la base
+des vérifications effectuées par nos systèmes, conformément à la réglementation anti-blanchiment, <b>votre nom
+figure sur la liste des ""personnes politiquement exposées / personnes d'intérêt
+local""</b> selon la définition suivante :
+<br/>
+""les personnes physiques qui exercent ou ont cessé d'exercer depuis moins d'un an d'importantes fonctions
+publiques, ainsi que les membres de leur famille et les personnes connues pour entretenir des
+liens étroits avec ces sujets"" (la liste des fonctions incluses dans cette définition figure ci-dessous).
+<br/><br/>
+Nous vous prions donc de remplir intégralement le formulaire ci-joint et de le renvoyer en répondant à cet
+e-mail dans un délai de <xsl:value-of select=""giorni_sospensione""/> jours à compter de la réception de la présente
+communication, comme prévu par la procédure de vigilance renforcée conformément à l'article 25
+paragraphe 4 du décret législatif 231/01 et ses modifications ultérieures.
+<br/><br/>
+Il est précisé que si la correspondance de votre nom dans ces listes est due à un
+cas d'homonymie, et que par conséquent vous ne répondez pas aux définitions indiquées ci-dessous, il vous suffira
+de sélectionner la case correspondante dans le document ci-joint.
+<br/><br/>
+<b>Nous vous informons qu'en cas d'absence de réponse dans le délai indiqué, nous devrons procéder à la
+suspension de votre compte de jeu jusqu'à la réception du formulaire demandé.</b>
+<br/><br/>
+Définition des personnes politiquement exposées / personnes d'intérêt local :
+<dl>
+<dt><b>1)</b> sont des personnes physiques qui exercent ou ont exercé d'importantes fonctions publiques,
+celles qui occupent ou ont occupé le poste de :</dt>
+<dd><b>1.1</b> Président de la République, Président du Conseil, Ministre, Vice-Ministre et
+Sous-secrétaire, Président de Région, Conseiller Régional, Maire d'un chef-lieu de province ou d'une ville
+métropolitaine, Maire d'une commune d'une population d'au moins 15 000 habitants ainsi que des fonctions
+analogues dans des États étrangers ;</dd>
+<dd><b>1.2</b> député, sénateur, parlementaire européen, conseiller régional ainsi que des fonctions
+analogues dans des États étrangers ;</dd>
+<dd><b>1.3</b> membre des organes directeurs centraux des partis politiques ;</dd>
+<dd><b>1.4</b> juge de la Cour Constitutionnelle, magistrat de la Cour de Cassation ou de la Cour
+des Comptes, conseiller d'État et autres membres du Conseil de Justice Administrative pour la Région
+sicilienne ainsi que des fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.5</b> membre des organes directeurs des banques centrales et des autorités
+indépendantes ;</dd>
+<dd><b>1.6</b> ambassadeur, chargé d'affaires ou fonctions équivalentes dans des États étrangers,
+officier de haut rang des forces armées ou fonctions analogues dans des États étrangers ;</dd>
+<dd><b>1.7</b> membre des organes d'administration, de direction ou de contrôle des entreprises
+contrôlées, même indirectement, par l'État italien ou par un État étranger ou détenues, de manière
+majoritaire ou totale, par les Régions, par les communes chefs-lieux de province et les villes métropolitaines et par
+les communes d'une population totale d'au moins 15 000 habitants ;</dd>
+<dd><b>1.8</b> directeur général d'une ASL ou d'un établissement hospitalier, d'un centre hospitalier universitaire
+ou d'autres organismes du service national de santé ;</dd>
+<dd><b>1.9</b> directeur, directeur adjoint ou membre de l'organe de gestion ou personne exerçant des
+fonctions équivalentes dans des organisations internationales ;</dd>
+<dt><b>2)</b> sont des membres de la famille de personnes politiquement exposées : les parents, le conjoint ou la personne liée par
+une union civile ou un concubinage de fait ou des institutions comparables, les enfants et leurs conjoints ainsi que les personnes liées
+aux enfants par une union civile ou un concubinage de fait ou des institutions comparables ;</dt>
+<dt><b>3)</b> sont des personnes avec lesquelles les personnes politiquement exposées sont connues pour entretenir des
+liens étroits :</dt>
+<dd><b>3.1</b> les personnes physiques qui, au sens du présent décret, détiennent, conjointement avec la
+personne politiquement exposée, la propriété effective d'entités juridiques, de trusts et d'institutions juridiques similaires
+ou qui entretiennent des relations d'affaires étroites avec la personne politiquement exposée ;</dd>
+<dd><b>3.2</b> les personnes physiques qui ne détiennent que formellement le contrôle total d'une
+entité notoirement constituée, de fait, dans l'intérêt et au profit d'une personne
+politiquement exposée ;</dd>
+</dl>
+<br/>
+Pour toute assistance, contactez notre Service Client.
+<br/><br/>
+L'équipe PokerStars
+<br/>
+</td>
+</tr>
+${FOOTER} "
+175;[FRA - 175] Aggiornamento delle preferenze privacy;info@clients.pokerstars.fr;"${HEADER}<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,<br/>
+<p>Vos <b>préférences de confidentialité ont été modifiées</b> conformément à votre demande.</p>
+<p>Vous pouvez les vérifier dans la section Paramètres de votre Espace réservé.</p>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+91;[FRA - 91] Il tuo documento sta per scadere;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+nous vous rappelons que la <b>pièce d'identité</b> enregistrée sur votre compte
+<b>expirera dans 30 jours.</b>
+<br />
+<br />
+<p>Vous pouvez télécharger une nouvelle copie lisible du même document, s'il a été renouvelé, ou d'un autre
+document en cours de validité (recto-verso de la carte d'identité, du passeport ou du
+permis de conduire).</p>
+<br />
+</td>
+</tr>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""http://pokerstars.it/content/dam/new-dam/italy/email/sgad/CTA_Carica_Documento.png""
+width=""180"" height=""40"" alt=""Télécharger"" border=""0"" style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+6;[FRA - 6] Stiamo verificando i tuoi dati;info@clients.pokerstars.fr;"NULL
+<br />
+<br/>
+<!-- Referrer site PokerStars.it - inizio -->
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+nous sommes en train de <b>vérifier vos données</b> pour finaliser votre inscription sur pokerstars. Nous vous communiquerons dès que possible par e-mail le résultat des vérifications.
+<br/>
+</td>
+</tr>
+<br/>
+<br/>
+<tr>
+<td style=""text-align:left; font-size:16px; line-height:22px; font-family:Calibri; padding:0px 20px 20px
+20px; text-align:left"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+8;[FRA - 8] Il tuo account non e' stato attivato;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<xsl:choose>
+<xsl:when test=""tipo_rifiuto=1"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>malheureusement, <b>il n'a pas été possible d'activer votre compte</b>, car les données saisies lors de l'inscription sont incorrectes ou font l'objet d'un doublon.</p>
+<p>Nous vous suggérons de <b>vous inscrire à nouveau</b> en utilisant des données valides. En particulier, vérifiez l'exactitude de :</p>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">nom et prénom, en faisant attention aux noms composés, aux accents, aux espaces et en reportant exactement les données telles qu'elles apparaissent sur votre carte de santé ;</li>
+<li style=""color: #222222;margin-left: 15px;"">date et lieu de naissance, pays.</li>
+</ul>
+<p>Si vous avez besoin d'aide, contactez notre service client.</p>
+</xsl:when>
+<xsl:when test=""tipo_rifiuto=2"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>malheureusement, <b>il n'a pas été possible d'activer votre compte</b>, car les données saisies lors de l'inscription concernent une personne décédée.</p>
+<p>Nous vous suggérons de <b>vous inscrire à nouveau</b> en utilisant des données valides. En particulier, vérifiez l'exactitude de :</p>
+<ul>
+<li style=""color: #222222;margin-left: 15px;"">nom et prénom, en faisant attention aux noms composés, aux accents, aux espaces et en reportant exactement les données telles qu'elles apparaissent sur votre carte de santé ;</li>
+<li style=""color: #222222;margin-left: 15px;"">date et lieu de naissance, pays.</li>
+</ul>
+<p>Si vous avez besoin d'aide, contactez notre service client.</p>
+</xsl:when>
+<xsl:otherwise>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<p>malheureusement, <b>il n'a pas été possible d'activer votre compte :</b> il apparaît que vous avez demandé une auto-exclusion transversale des jeux en ligne.</p>
+<p>Pour cette raison, il ne vous est pas possible d'ouvrir un compte pour le moment.</p>
+<p>Si vous avez besoin d'aide, contactez notre service client.</p>
+</xsl:otherwise>
+</xsl:choose>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+21;[FRA - 21] A breve potrai prelevare di nuovo;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+<p>les identifiants relatifs au retrait via
+<xsl:value-of select=""tipo_prelievo_descr""/>
+<b>ont été débloqués.</b></p>
+<p>Dans
+<xsl:value-of select=""prelievo_ore_sblocco""/>
+heures, vous pourrez effectuer une nouvelle demande de retrait avec vos nouveaux identifiants.</p>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+111;[FRA - 111] Il tuo account e' stato chiuso;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+nous vous informons que <b>nous avons fermé votre compte</b>, comme prévu par l'article 10 du
+contrat de jeu.<br/><br/>
+<b>Vous pourrez en ouvrir un nouveau dans 15 jours</b> et revenir jouer avec nous.<br />
+S'il s'agit de la deuxième fois que votre compte est fermé, au moins
+un an devra s'être écoulé depuis votre première inscription.<br/><br/>
+Nous espérons vous revoir bientôt !
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+128;[FRA - 128] NULL;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br /><br />
+<xsl:choose>
+<xsl:when test=""tipo_sollecito=1"">
+n'oubliez pas, si vous ne l'avez pas encore fait, que vous avez <b><xsl:value-of select=""gg_to_cc_susp"" /> jours</b>
+pour <b>télécharger une copie</b> recto/verso de votre <b>pièce d'identité</b>
+(carte d'identité, permis de conduire ou passeport).
+<br/><br/>
+De cette façon, vous pourrez régulariser votre compte et retirer vos gains.
+<br/><br/>
+</xsl:when>
+<xsl:when test=""tipo_sollecito=2"">
+complétez votre inscription en téléchargeant une copie recto/verso de votre <b>pièce d'identité</b> (carte d'identité, permis de conduire ou passeport) : il vous reste encore <b><xsl:value-of select=""gg_to_cc_susp"" /> jours</b> pour le faire.
+<br/><br/>
+</xsl:when>
+<xsl:when test=""tipo_sollecito=3"">
+il ne vous reste <b>que <xsl:value-of select=""gg_to_cc_susp"" /> jours</b> pour télécharger une copie
+recto/verso de votre <b>pièce d'identité</b> (carte d'identité, permis de conduire
+ou passeport) et éviter que votre compte ne soit suspendu.
+<br/><br/>
+</xsl:when>
+<xsl:when test=""tipo_sollecito=4"">
+nous n'avons plus de temps : si vous ne l'avez pas encore fait, <b>téléchargez une copie recto/verso de
+votre pièce d'identité</b> (carte d'identité, permis de conduire ou passeport) pour
+éviter que votre compte ne soit suspendu.
+<br/><br/>
+</xsl:when>
+</xsl:choose>
+</td>
+</tr>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Télécharger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+60;[FRA - 60] Abbiamo ricevuto il tuo documento;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<p>merci de nous avoir fourni toute la documentation nécessaire : <b>votre profil est complet</b> et vous pouvez désormais retirer vos gains.</p>
+<br />
+<br />
+Amusez-vous bien !
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+56;[FRA - 56] Ricarica accreditata sul tuo account;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+<b>le rechargement de <xsl:value-of select=""importo_ricarica"" /> €</b>
+que vous avez effectué via un <b>bon Epay</b> a été crédité sur votre compte.
+<br />
+<br />
+Amusez-vous bien !
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+134;[FRA - 134] Inviaci il tuo documento d'identità;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+pour nous permettre de <b>vérifier</b><xsl:choose><xsl:when test=""flag_selfie=Y""><b> votre
+identité</b> et</xsl:when></xsl:choose> l'<b>exactitude des données que vous avez
+saisies</b> lors de l'inscription, comme le prévoit la réglementation en vigueur, nous vous demandons de
+<b>nous envoyer</b> une copie recto verso d'<b>une pièce d'identité</b> en cours de
+validité (carte d'identité, passeport ou permis de conduire), intacte et avec toutes les données bien lisibles.
+<br /><br />
+Au cours de la procédure guidée, il vous sera également demandé de prendre un « selfie » pour compléter la vérification
+de l'identité.
+<br /><br />
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Charger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table><br/><br/>
+Nous vous rappelons que cette procédure de vérification est indispensable pour réactiver votre compte. La
+vérification de l'identité peut prendre jusqu'à un maximum de 24 heures pour être complétée.
+<br /><br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+135;[FRA - 135] Abbiamo un suggerimento per te;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+votre limite hebdomadaire de dépôt est de
+<b>
+&#8364;
+<xsl:value-of select=""limite_attuale"" />
+</b>.
+<br />
+<br />
+Nous avons une suggestion pour vous : vous pourriez la réduire à
+<b>
+&#8364;
+<xsl:value-of select=""limite_futuro"" />
+</b>. Ce montant nous semble le plus approprié pour
+vous permettre de <b>vous divertir de manière équilibrée et sûre.</b>
+<br />
+<br />
+Nous vous demandons d'accepter ou de refuser notre
+proposition <b>sous 7 jours</b> ; passé ce délai,
+nous modifierons votre limite par celle suggérée.
+<br />
+<br />
+</td>
+</tr>
+<br />
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a href=""https://www.pokerstars.it/area-riservata/giocoresponsabile"" style=""outline:0;""
+target=""_blank"">
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Rispondi_proposta.png"" width=""180"" height=""40"" alt=""Répondre"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<br />
+<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+<br />
+${FOOTER} "
+186;[FRA - 186] AUTOMATIC_WITHDRAWAL_RESULT;info@clients.pokerstars.fr;"${HEADER}
+<br/><br/>
+<tr>
+    <td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+        Ciao <xsl:value-of select=""nome"" />,
+    <br />
+    AUTOMATIC_WITHDRAWAL_RESULT TEST DUMMY TEMPLATE
+    <br />
+    Buon divertimento!
+    <br />
+        <br />
+    Il Team PokerStars
+    <br/>
+  </td>
+</tr>
+<br/>
+${FOOTER}"
+133;[FRA - 133] Inviaci il tuo documento d'identità;info@clients.pokerstars.fr;"${HEADER}<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/><br/>
+afin de nous permettre de <b>vérifier l'exactitude des données</b> que vous avez saisies lors de l'inscription, conformément à la réglementation en vigueur, nous vous demandons de nous envoyer une copie recto-verso d'<b>une pièce d'identité</b> en cours de validité (carte d'identité, permis de conduire ou passeport), intacte et avec toutes les données bien lisibles.
+<br/><br/>
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Télécharger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+<br/><br/>
+Nous vous rappelons que l'envoi de la copie du document est indispensable pour compléter votre compte et retirer d'éventuels gains.
+<br/>
+<br/><br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+140;[FRA - 140] Richiesta sul limite di ricarica;info@clients.pokerstars.fr;"${HEADER}
+<br/>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,<br/>
+<p style=""margin-bottom: 15px;"">Nous vous remercions d'avoir défini votre limite de recharge lors de votre
+inscription. Votre nouvelle limite est de <b><xsl:value-of select=""importo"" /></b>&#8364;.
+Nous avons bien noté que vous avez demandé une limite plus élevée que celle que vous voyez actuellement :
+celle-ci sera évaluée et éventuellement approuvée ou refusée dès que possible.
+Vous recevrez un e-mail de confirmation avec notre décision.</p>
+<p style=""margin-bottom: 15px;"">Vous pouvez vérifier votre limite actuelle dans la section Jeu Responsable
+de votre Espace réservé. Si vous changez d'avis, <b>vous pourrez modifier votre limite à tout moment.</b> Si vous
+l'abaissez, elle sera effective immédiatement.</p>
+<p style=""margin-bottom: 15px;"">Nous vous invitons à découvrir tous nos outils de Jeu
+Responsable.</p><br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""'https://www.pokerstars.it/gioco-responsabile/strumenti/'"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Scopri_strumenti.png"" width=""180"" height=""40"" alt=""Découvrir les outils"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe du Jeu Responsable</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+115;[FRA - 115] Ti e' stata accreditata una vincita errata;info@clients.pokerstars.fr;"${HEADER}<br />
+  <tr>
+    <td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+      Ciao <xsl:value-of select=""nome"" />,
+      <br />
+      <br />
+      ti informiamo che il <xsl:value-of select=""data_vincita"" />
+      alle
+      <xsl:value-of select=""ora_vincita"" />
+      &#xe8; stata <b>accreditata</b> sul tuo account <b>una vincita non spettante.</b>
+      <br/><br/>
+      Il biglietto
+      <xsl:value-of select=""tsn"" />
+      &#xe8; stato <b>erroneamente considerato vincente</b> per un importo di &#8364; <xsl:value-of select=""importo_vincita_errata"" />
+      per via di un <b>referto non corretto.</b>
+      <br /><br/>
+      A causa del saldo insufficiente per&#xf2;, non ci &#xe8; stato possibile stornare completamente la vincita errata: lo <b>storno residuo</b> pari a <b>&#8364; <xsl:value-of select=""importo_storno_residuo"" /></b>
+      avverr&#xe0; automaticamente quando il tuo saldo prelevabile lo consentir&#xe0;.
+      <br />
+      <br />
+      Ci scusiamo per il disguido.
+      <br />
+      <br />
+    </td>
+  </tr>
+  <tr>
+    <td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+    <i>Il Team PokerStars</i>
+    <br/>
+    </td>
+  </tr>
+${FOOTER}"
+188;[FRA - 188] RG_NOTIFICATION;info@clients.pokerstars.fr;"${HEADER}
+<br/><br/>
+<tr>
+    <td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+        Ciao <xsl:value-of select=""nome"" />,
+    <br />
+    RG_NOTIFICATION TEST DUMMY TEMPLATE
+    RG_TEST : <a href=""https://test-fr-www-ps.sisal.it/gioco-responsabile/est-ce-que-j-ai-un-probleme-de-jeu"" target=""_blank"">
+https://test-fr-www-ps.sisal.it/gioco-responsabile/est-ce-que-j-ai-un-probleme-de-jeu
+</a>
+    <br />
+    Buon divertimento!
+    <br />
+        <br />
+    Il Team PokerStars
+    <br/>
+  </td>
+</tr>
+<br/>
+${FOOTER}"
+139;[FRA - 139] Richiesta sul limite di ricarica;info@clients.pokerstars.fr;"${HEADER}
+<br/>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<div>
+<p style=""margin-bottom: 15px;"">
+Bonjour <xsl:value-of select=""nome""/>,
+</p>
+<p style=""margin-bottom: 15px;"">
+Nous avons le regret de vous informer que <b>votre demande d'</b><br/>
+augmentation de la limite de dépôt <b>n'a pas été acceptée :</b><br/>
+votre limite sera de
+<b>
+<xsl:value-of select=""importo"" />
+</b>
+&#8364;.
+</p>
+<p style=""margin-bottom: 15px;"">
+Vous pouvez consulter toutes les informations relatives à la limite dans la<br/>
+section Jeu Responsable de votre Espace personnel.
+</p>
+<p style=""margin-bottom: 15px;"">
+Nous avons pris cette décision après une <b>évaluation<br/>
+minutieuse</b> et sur la base de nos directives de Jeu<br/>
+Responsable pour la protection de nos clients.
+</p>
+<p style=""margin-bottom: 15px;"">Nous voulons nous assurer que vous gardez <b>toujours la situation<br/>
+sous contrôle</b> afin que votre expérience sur notre site<br/>
+reste positive.
+</p>
+<p>Nous vous invitons à découvrir nos outils de Jeu Responsable.</p>
+<br/>
+</div>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""'https://www.pokerstars.it/gioco-responsabile/strumenti'"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Scopri_strumenti.png"" width=""180"" height=""40"" alt=""Découvrir les outils"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<br/>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe du Jeu Responsable</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+109;[FRA - 109] Account sospeso in modo definitivo;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+nous vous informons que votre compte a été <b>suspendu de manière définitive</b> et ne peut pas
+être réactivé.
+<br/>
+<br/>
+Pour demander le remboursement des sommes éventuellement présentes sur le compte, veuillez télécharger une copie lisible
+recto-verso de votre carte d'identité, passeport ou permis de conduire.
+Ensuite, <b>contactez-nous pour demander la clôture du compte.</b><br/><br/>
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Télécharger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table><br/><br/>
+<br/>
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+<br/><br/>
+${FOOTER} "
+43;[FRA - 43] Verifica il tuo nuovo indirizzo email;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:left; font-size:16px; line-height:22px; font-family:Calibri; padding:0px 20px 20px
+20px; text-align:left"">
+Bonjour <xsl:value-of select=""nome"" />,
+<p>nous avons <b>modifié l'adresse e-mail</b> associée à votre compte : pour continuer à
+accéder à votre compte en toute sécurité, nous vous demandons de <b>confirmer la nouvelle adresse.</b></p>
+</td>
+</tr>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-dam/italy/email/sgad/CTA_verifica_email.png""
+width=""180"" height=""40"" alt=""Vérifier"" border=""0"" style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+138;[FRA - 138] Richiesta sul limite di ricarica;info@clients.pokerstars.fr;"
+${HEADER}
+<br/>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,<br/>
+<p style=""margin-bottom: 15px;"">Nous avons le regret de vous informer que <b>votre demande d'</b><br/>
+augmentation de la limite de recharge <b>n'a pas été acceptée :</b><br/>
+votre limite sera de <b><xsl:value-of select=""importo"" /></b>€.</p>
+<p style=""margin-bottom: 15px;"">Vous pouvez vérifier toutes les informations sur la limite dans la section Jeu
+Responsable de votre Espace réservé.</p>
+<p style=""margin-bottom: 15px;"">Nous avons pris cette décision après une <b>évaluation<br/>
+minutieuse</b> et sur la base de nos directives de Jeu<br/>
+Responsable pour la protection de nos clients.</p>
+<p style=""margin-bottom: 15px;"">Nous voulons nous assurer que vous ayez <b>toujours la situation<br/>
+sous contrôle</b> afin que votre expérience sur notre site<br/>
+reste positive.</p>
+<p style=""margin-bottom: 15px;"">Enfin, nous vous invitons à découvrir tous nos outils de Jeu
+Responsable.</p>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""'https://www.pokerstars.it/gioco-responsabile/strumenti/'"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Scopri_strumenti.png"" width=""180"" height=""40"" alt=""Découvrir"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'Équipe du Jeu Responsable</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+132;[FRA - 132] Violazione di termini e condizioni;info@clients.pokerstars.fr;"${HEADER}<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/><br/>
+suite à une vérification attentive de l'activité de votre compte, nous avons détecté un
+<b>comportement non conforme aux conditions générales</b> de l'offre à
+laquelle vous avez adhéré, que nous vous rappelons ci-dessous :
+<br/>
+<ul>
+<li>Les titulaires de comptes présentant les caractéristiques suivantes (à titre purement illustratif et
+non exhaustif) ne pourront pas bénéficier des bonus :
+<ul>
+<li>compte suspendu ;</li>
+<li>avertissement pour jeu anormal ;</li>
+<li>avertissement pour collusion ;</li>
+<li>avertissement pour violation des conditions générales des bonus.</li>
+</ul>
+</li>
+<li>Les bonus ne peuvent pas être versés (à titre purement illustratif et non exhaustif) s'ils sont :
+<ul>
+<li>obtenus par des jeux entachés de collusion entre titulaires de comptes ;</li>
+<li>obtenus via des inscriptions ""multiples"" de comptes (effectuées par exemple depuis la même adresse
+IP) ;</li>
+<li>obtenus par des jeux ""croisés"", combinés ou qui annulent l'aléa caractéristique du
+produit de jeu ;</li>
+<li>obtenus par des jeux à risque minimal effectués afin de satisfaire aux conditions
+de l'offre ;</li>
+</ul>
+</li>
+<li>TSG Italy Srl. se réserve le droit, à sa seule discrétion, de ne pas verser le bonus aux personnes n'y ayant
+pas droit.</li>
+</ul>
+<br/>
+Sans préjudice de ce qui précède, et compte tenu de l'art. 10.5 « Obligations et
+responsabilités du Client » du contrat de jeu que vous avez expressément accepté, à savoir <i>« Le Client
+utilise le compte de jeu en adoptant un comportement loyal […] envers le Concessionnaire ainsi que
+conforme à la réglementation en vigueur. […] »</i> nous vous informons que <b>nous ne pouvons pas procéder au
+crédit du bonus</b> relatif à l'offre à laquelle vous avez adhéré et que, à compter de la date de
+réception de ce message, <b>vous ne pourrez plus accéder aux éventuels bonus</b> publiés par pokerstars.
+<br/><br/>
+Tout en vous invitant à adapter votre comportement aux règles d'équité spécifiées ci-dessus, nous vous informons que
+<b>votre activité de jeu sera à nouveau évaluée</b> afin d'en vérifier la
+conformité avec les critères susmentionnés, et ainsi vous accorder la possibilité d'être réadmis à la réception
+d'éventuelles offres futures.
+</td>
+</tr>
+<br/><br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+59;[FRA - 59] Il tuo account e' stato chiuso;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<p>comme vous l'avez demandé, <b>nous avons fermé votre compte.</b><br/></p>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<p>Nous espérons que ce n'est qu'un au revoir : si vous changez d'avis, <b>dans 15 jours</b> vous pourrez ouvrir un
+<b>nouveau compte</b> et revenir jouer avec nous. Si, en revanche, c'est la deuxième fois que vous fermez
+votre compte, au moins un an devra s'être écoulé depuis votre première inscription.<br /></p>
+<p>Nous espérons avoir de vos nouvelles bientôt !</p>
+</td>
+</tr>
+<br /><br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+88;[FRA - 88] Richiesta di prelievo autorizzata;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+la <b>demande de retrait</b> en point de vente que vous avez envoyée le
+<xsl:value-of select=""data_inoltro"" />
+pour un montant de €
+<xsl:value-of select=""importo"" />
+<b>a été autorisée.</b>
+<br/>
+<br/>
+Vous pouvez vous rendre <b>sous 7 jours</b> dans l'un des
+<a style=""color: #222222;font-weight: bold;Text-decoration: underline;""
+href=""https://negozi.sisal.com"">points de vente agréés</a>
+en présentant ce code :
+<br />
+</td>
+</tr>
+<tr>
+<td colspan=""3"" style=""font-family:verdana;font-size:10pt;text-align:center"">
+<b>CODE DE RETRAIT</b>
+<br />
+<xsl:value-of select=""codice_prelievo"" />
+<br />
+<img width=""400"" height=""70""><xsl:attribute name=""src"">https://m.pokerstars.it/barcode/barcode-
+api?showCode=false&amp;codice=<xsl:value-of select=""codice_prelievo"" /></xsl:attribute></img>
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<br />
+N'oubliez pas de <b>présenter une pièce d'identité</b> en cours de validité (carte
+d'identité, passeport ou permis de conduire) : le revendeur devra en obtenir une copie à joindre
+au reçu de paiement une fois la procédure d'encaissement terminée.
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+92;[FRA - 92] Aggiorna il tuo documento d'identità;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+<p>la <b>pièce d'identité</b> enregistrée sur votre compte est <b>expirée depuis 30
+jours.</b></p>
+<br />
+<br />
+<p><b>Téléchargez une nouvelle copie</b> lisible du même document, s'il a été renouvelé, <b>ou d'un autre
+document</b> en cours de validité (recto-verso de la carte d'identité, du passeport ou du
+permis de conduire).</p>
+<br />
+</td>
+</tr>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""http://pokerstars.it/content/dam/new-dam/italy/email/sgad/CTA_Carica_Documento.png""
+width=""180"" height=""40"" alt=""Télécharger"" border=""0"" style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+108;[FRA - 108] Il tuo account PokerStars e' stato sospeso;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<br/>
+nous vous informons que <b>votre compte est suspendu.</b>
+<br/>
+Vous avez encore <b>30 jours pour le réactiver,</b> en téléchargeant une copie lisible recto-verso de votre carte
+d'identité, passeport ou permis de conduire.<br/><br/>
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Télécharger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table><br/><br/>
+Si le compte n'est pas régularisé, comme prévu par l'art. 10 du contrat de
+jeu, vous devrez obligatoirement en demander la clôture. Pour plus d'informations et d'assistance, contactez notre
+service client.
+<br/>
+<br/>
+Nous vous rappelons que l'envoi de la copie du document est indispensable pour retirer vos gains.
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe PokerStars</i>
+<br/>
+</td>
+</tr>
+<br/><br/>
+${FOOTER} "
+187;[FRA - 187] INACTIVE_ACCOUNT_12M;info@clients.pokerstars.fr;"${HEADER}
+<br/><br/>
+<tr>
+    <td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+        Ciao <xsl:value-of select=""nome"" />,
+    <br />
+    INACTIVE_ACCOUNT_12M TEST DUMMY TEMPLATE
+    <br />
+    Buon divertimento!
+    <br />
+        <br />
+    Il Team PokerStars
+    <br/>
+  </td>
+</tr>
+<br/>
+${FOOTER}"
+83;[FRA - 83] Il tuo documento d'identita' è scaduto;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<p><b>la pièce d'identité</b> enregistrée sur votre compte a <b>expiré.</b></p>
+<br />
+<br />
+<p><b>Veuillez télécharger une nouvelle copie</b> lisible du même document, s'il a été renouvelé, ou d'une autre
+pièce d'identité en cours de validité (recto-verso de la carte d'identité, du passeport ou du
+permis de conduire).</p>
+<br /><br />
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://pokerstars.it/content/dam/new-dam/italy/email/sgad/CTA_Carica_Documento.png""
+width=""180"" height=""40"" alt=""Télécharger"" border=""0"" style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+<br/><br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+69;[FRA - 69] Complimenti, hai vinto NULL€;info@clients.pokerstars.fr;"${HEADER}
+<!-- Notifica scommessa vincente Ippica/Sport -->
+<!-- Inizio Body -->
+<xsl:if test=""tipo_scommessa=1"">
+<!-- Scommessa di tipo SPORT -->
+<tr>
+<td height=""130"" style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"" valign=""middle"" >
+<br />
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br/>
+félicitations ! <b>Vous avez gagné
+<span style=""font-weight:bold; font-size:16px; color:#13489a;"">
+<xsl:value-of select=""importo_vincita"" />&#8364;
+</span></b>
+avec le pari
+<span style=""color:#13489a; font-weight:bold;"">
+<xsl:value-of select=""tsn"" />
+</span>
+.
+<br />
+<br />
+N'oubliez pas que sur pokerstars, vous pouvez consulter le détail de vos paris
+et vous amuser chaque jour avec les meilleurs événements sportifs du monde entier.
+<br />
+<br />
+</td>
+</tr>
+</xsl:if>
+<xsl:if test=""tipo_scommessa=2"">
+<!-- Scommessa di tipo IPPICA -->
+<tr>
+<td height=""130"" style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"" valign=""middle"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br/>
+félicitations ! <b>Vous avez gagné
+<span style=""font-weight:bold; font-size:16px; color:#13489a;"">
+<xsl:value-of select=""importo_vincita"" />&#x20AC;
+</span></b>
+avec le pari
+<span style=""color:#13489a; font-weight:bold;"">
+<xsl:value-of select=""tsn"" />
+</span>
+.
+<br />
+<br />
+N'oubliez pas que sur pokerstars, vous pouvez consulter le détail de vos paris
+et vous amuser chaque jour avec les meilleurs événements sportifs du monde entier.
+<br />
+<br />
+</td>
+</tr>
+</xsl:if>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+<br/>
+<br/>
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+86;[FRA - 86] La tua ricarica sta per scadere;info@clients.pokerstars.fr;"${HEADER}<br />
+<xsl:choose>
+<xsl:when test=""flag_light=1"">
+<!-- Referrer site PokerStars.it - fine -->
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+le
+<xsl:value-of select=""data_operazione"" />
+vous avez enregistré un compte de jeu dans un point de vente pokerstars.
+<br />
+<br />
+Connectez-vous dès maintenant pour finaliser votre inscription et activer votre recharge de
+<xsl:value-of select=""importo"" /> €
+<br />
+<br />
+Dépêchez-vous, l'inscription et la recharge expirent dans 30 jours !
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+</xsl:when>
+<!-- Referrer site PokerStars.it - fine -->
+<xsl:otherwise>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-
+family:Roboto, Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+<p>nous vous rappelons de <b>créditer sur votre compte le montant de la recharge</b> que vous avez
+effectuée en point de vente le <xsl:value-of select=""data_operazione"" />.</p>
+<p>Pour créditer le montant sur votre compte, accédez à la section Recharge de votre Espace
+réservé et, après avoir sélectionné le mode « Point de vente », saisissez le code PIN de
+recharge.</p>
+<p>La recharge <b>expire dans
+<xsl:value-of select=""giorni_scadenza"" />
+jours.</b></p>
+<!--<xsl:value-of select=""mesi_scadenza"" />-->
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+</xsl:otherwise>
+</xsl:choose>
+${FOOTER} "
+119;[FRA - 119] Benvenuto in PokerStars!;info@clients.pokerstars.fr;"${HEADER}
+<tr>
+<td align=""center"" style=""padding:20px 0px"">
+<img
+src=""https://www.pokerstars.it/documents/10903/20179668/119_Welcome_PDV_600X250.png/e88f4003-
+3bd8-da5a-c715-0c601509e2f9?t=1589452109215 - Copia.png"" width=""650"" height=""250"" alt=""Bienvenue""
+border=""0"" style=""display:block;"" />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto,
+Arial, sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+merci d'avoir complété votre inscription !
+<br />
+Nous avons correctement enregistré vos données,
+<a style=""color: #222222;font-weight: bold;Text-decoration: underline;"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+cliquez ici
+</a>
+pour confirmer votre e-mail et recevoir le contrat de jeu.
+<br />
+<br />
+Nous vous rappelons de conserver précieusement le code de compte indiqué dans cet e-mail car il est indispensable pour vous identifier.
+<br />
+<br />
+Grâce à votre inscription, vous pourrez profiter des nombreux avantages du
+<a style=""color: #222222;font-weight: bold;Text-decoration: underline;""
+href=""https://www.pokerstars.it/programma-fedelta"">Programme de Fidélité</a>
+pokerstars !
+<br />
+<br />
+Si vous ne nous avez pas encore fourni une copie de votre pièce d'identité, n'oubliez pas de le faire dans les 30 jours pour finaliser votre inscription et retirer vos gains : vous pouvez télécharger une copie lisible recto-verso de votre carte d'identité, passeport ou permis de conduire directement <a style=""color:
+#222222;font-weight: bold;Text-decoration: underline;""><xsl:attribute name=""href"">
+<xsl:value-of select=""http_url_jumio"" />
+</xsl:attribute>
+en cliquant ici</a>.
+<br />
+<br />
+<br />
+L'équipe pokerstars
+<br/>
+</td>
+</tr>
+${FOOTER}                                "
+137;[FRA - 137] Richiesta sul limite di ricarica;info@clients.pokerstars.fr;"
+${HEADER}<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<p style=""margin-bottom: 15px;"">
+Bonjour <xsl:value-of select=""nome""/>,
+</p>
+<p style=""margin-bottom: 15px;"">après une évaluation attentive, sur la base de nos directives
+de Jeu Responsable, nous avons <b>accepté votre demande d'augmentation de la limite de dépôt.</b></p>
+<p style=""margin-bottom: 15px;"">Vous pouvez vérifier quand la nouvelle limite entrera en vigueur dans la
+section Jeu Responsable de votre Espace personnel.</p>
+<p style=""margin-bottom: 15px;"">Si vous changez d'avis, <b>vous pourrez modifier votre limite à tout
+moment.</b> Si vous l'abaissez, cela sera effectif immédiatement.</p>
+<p style=""margin-bottom: 15px;"">Nous vous invitons à découvrir tous nos outils de Jeu
+Responsable.</p>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""'https://www.pokerstars.it/gioco-responsabile/strumenti'"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Scopri_strumenti.png"" width=""180"" height=""40"" alt=""Découvrir"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<br/>
+<br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe du Jeu Responsable</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+174;[FRA - 174] Inviaci il tuo documento d'identita';info@clients.pokerstars.fr;"${HEADER}
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<p>afin de nous permettre de <b>vérifier votre identité</b> et l'<b>exactitude des données que vous avez saisies</b> lors de l'inscription, comme le prévoit la réglementation en vigueur, nous vous demandons de nous <b>envoyer</b> une copie recto-verso d'<b>une pièce d'identité</b> en cours de validité (carte d'identité, permis de conduire ou passeport), intacte et avec toutes les données bien lisibles.</p>
+<p>Au cours de la procédure guidée, il vous sera également demandé de prendre un « selfie » pour compléter la vérification de votre identité.</p><br/>
+<table cellpadding=""0"" cellspacing=""0"" width=""100%"" bgcolor=""#ffffff"" style=""background-
+color:#ffffff;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;"">
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url_jumio"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_Carica_Documento.png"" width=""180"" height=""40"" alt=""Charger"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+</table>
+<br/><br/>
+Nous vous rappelons que cette procédure de vérification est indispensable pour réactiver votre compte.
+<br />
+<br />
+<br/>
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe Pokerstars</i>
+<br/>
+</td>
+</tr>
+<br/>
+${FOOTER} "
+7;[FRA - 7] Ti diamo il benvenuto su PokerStars!;info@clients.pokerstars.fr;"${HEADER}
+<br />
+<tr>
+<td align=""center"" style=""padding:20px 0px"">
+<img src=""https://pokerstars.it/content/dam/new-dam/italy/email/sgad/Hero_Benvenuto.jpg""
+width=""650"" height=""400"" alt=""Bienvenue"" border=""0"" style=""display:block;"" />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<br/>
+Bonjour <xsl:value-of select=""nome""/>,
+<br/>
+<xsl:choose>
+<xsl:when test=""spid_process=1"">
+<p>vous venez de faire le premier pas dans l'univers de pokerstars, où le <b>divertissement</b>, le <b>défi</b>
+et l'<b>adrénaline</b> ne manquent jamais.
+</p>
+<p>Désormais, votre compte est actif : vous pouvez vous connecter immédiatement avec le nom d'utilisateur et le mot de passe choisis
+lors de l'inscription.</p>
+<p>Avant de commencer, nous vous invitons à lire le contrat de jeu que vous trouverez en pièce jointe de cet e-mail.</p>
+<br/>
+</xsl:when>
+<xsl:otherwise>
+<p>vous venez de faire le premier pas dans l'univers de pokerstars, où le <b>divertissement</b>, le
+<b>défi</b> et l'<b>adrénaline</b> ne manquent jamais.
+</p>
+<p>Désormais, votre compte est actif : vous pouvez vous connecter immédiatement avec le nom d'utilisateur et le mot de passe choisis
+lors de l'inscription.</p>
+<p>Avant de commencer, nous vous invitons à lire le contrat de jeu que vous trouverez en pièce jointe de cet e-mail.</p>
+<br/>
+<div>
+<center>
+<a>
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url_jumio"" />
+</xsl:attribute>
+<img src=""https://pokerstars.it/content/dam/new-dam/italy/email/sgad/CTA_Accedi.png"" width=""141""
+height=""56"" alt=""Se connecter"" border=""0"" style=""display:block;"" />
+</a>
+</center>
+</div>
+</xsl:otherwise>
+</xsl:choose>
+</td>
+</tr>
+<br/>
+<i>L'équipe pokerstars</i>
+<br/>
+<br/>
+${FOOTER} "
+42;[FRA - 42] Verifica il tuo indirizzo email;info@clients.pokerstars.fr;"${HEADER}<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<p>vous avez finalisé votre <b>inscription avec succès</b> et vous pouvez désormais <b>accéder
+à votre compte.</b></p>
+<p>Il vous suffit maintenant d'un clic pour <b>vérifier votre adresse e-mail.</b> Cela nous permettra de
+rester en contact, d'avoir la <b>certitude</b> que c'est bien vous qui recevez les communications qui vous sont réservées et de
+vous fournir notre <b>assistance</b> si vous en avez besoin.</p>
+</td>
+</tr>
+<tr>
+<td align=""center"" tyle=""background-color: #e1eefe;"">
+<a style=""outline:0;"" target=""_blank"">
+<xsl:attribute name=""href"">
+<xsl:value-of select=""http_url"" />
+</xsl:attribute>
+<img src=""https://www.pokerstars.it/content/dam/new-
+dam/italy/email/sgad/CTA_verifica_email.png"" width=""180"" height=""40"" alt=""Vérifier"" border=""0""
+style=""display:block;"" />
+</a>
+</td>
+</tr>
+<br/><br/>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
+68;[FRA - 68] Il tuo saldo e' inferiore a NULL€;info@clients.pokerstars.fr;"
+${HEADER}
+<br />
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+Bonjour <xsl:value-of select=""nome"" />,
+<br />
+<br />
+nous vous informons que le solde de votre compte est <b>inférieur à
+<span style=""color:#00643b; font-size:16px;"">
+<strong>
+<xsl:value-of select=""soglia"" />
+&#8364;.
+</strong>
+</span>
+</b>
+<br />
+<br />
+Vous pouvez le recharger avec l'un des <b>modes de paiement</b> suivants :
+Visa, Mastercard, Postepay, PayPal, Skrill, Neteller, PaysafeCard, virement bancaire, Apple Pay, MyBank et
+point de vente.
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style=""text-align:justify; color: #222222; font-size:16px; line-height:150%; font-family:Roboto, Arial,
+sans-serif; padding:0px 20px 20px 20px"">
+<br />
+<i>L'équipe pokerstars</i>
+<br/>
+</td>
+</tr>
+${FOOTER} "
