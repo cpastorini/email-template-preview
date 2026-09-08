@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import csv
 import html
 import io
 import re
@@ -27,19 +28,48 @@ class Templates:
 def read_csv(uploaded_file) -> pd.DataFrame:
     data = uploaded_file.getvalue()
     last_error = None
+    candidate_separators = [";", ",", "\t", "|"]
+
     for encoding in ("utf-8-sig", "utf-8", "cp1252", "latin1"):
+        separators = candidate_separators.copy()
         try:
-            return pd.read_csv(
+            sample = data.decode(encoding, errors="ignore")[:10000]
+            detected = csv.Sniffer().sniff(sample, delimiters=";,\t|").delimiter
+            separators = [detected] + [sep for sep in candidate_separators if sep != detected]
+        except Exception:
+            pass
+
+        for sep in separators:
+            try:
+                df = pd.read_csv(
+                    io.BytesIO(data),
+                    sep=sep,
+                    quotechar='"',
+                    encoding=encoding,
+                    dtype=str,
+                    keep_default_na=False,
+                    engine="python",
+                )
+                if REQUIRED_COLUMNS.issubset(df.columns):
+                    return df
+            except Exception as exc:
+                last_error = exc
+
+        try:
+            df = pd.read_csv(
                 io.BytesIO(data),
-                sep=";",
+                sep=None,
                 quotechar='"',
                 encoding=encoding,
                 dtype=str,
                 keep_default_na=False,
                 engine="python",
             )
+            if REQUIRED_COLUMNS.issubset(df.columns):
+                return df
         except Exception as exc:
             last_error = exc
+
     raise ValueError(f"Unable to read the CSV: {last_error}")
 
 
